@@ -1,0 +1,21 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.2",
+	"FriendlyName": "VRS — Value Resolution System",
+	"Description": "Priority-based, layered value modification framework for UE5. Batch changes, track history, resolve conflicts between multiple change sources.",
+	"Category": "Gameplay",
+	"CreatedBy": "Ilia Zherlitsin",
+	"CreatedByURL": "https://github.com/IliaZherlitsin/VRS",
+	"MarketplaceURL": "",
+	"SupportURL": "https://github.com/IliaZherlitsin/VRS/issues",
+	"CanContainContent": false,
+	"IsBetaVersion": true,
+	"Modules": [
+		{
+			"Name": "VRS",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}

@@ -1,0 +1,296 @@
+Copyright (c) 2026 Ilia Zherlitsin. All Rights Reserved.
+
+VRS SOURCE-AVAILABLE NON-COMMERCIAL LICENSE
+
+Version 1.1
+
+This license applies to the VRS software framework, including its source code, modules, plugins, documentation, examples, tests, configuration files, and other materials distributed in the official VRS repository, except for materials expressly identified as being subject to separate license terms.
+
+The Software is source-available but is not Open Source software under the Open Source Definition maintained by the Open Source Initiative.
+
+This license is not legal advice. If you require certainty about how this license applies to your specific situation, consult a qualified attorney.
+
+
+Definitions
+
+
+"Software" means VRS and all materials covered by this license.
+
+"Project" means a game, application, simulation, educational work, or other work that uses or incorporates the Software.
+
+"Commercial Use" means use intended to produce revenue, compensation, commercial advantage, funding, or business value, including use in paid products, advertisements, subscriptions, in-app purchases, client work, contract work, company projects, internal business tools, or projects intended for future commercial release.
+
+"Author" means Ilia Zherlitsin.
+
+"Protected Portions" means the literal source code, header files, algorithms, and architectural implementation details of the Software as expressed in the official VRS repository — that is, the specific expression of the code itself. Protected Portions do not include: public API names, function signatures, or interfaces necessary for interoperability; general concepts, ideas, or design patterns (e.g., "a layered stat-modifier resolution system") that are not tied to VRS's specific implementation; or any functionality independently arrived at without copying, viewing for the purpose of copying, or adapting VRS's source expression.
+
+"Publicly Available" means accessible by any person who is not (a) the Author, (b) a member of a Project team under the "Permitted Non-Commercial Use" section, or (c) an authorized contributor acting under the "Contributions" section, without requiring specific individual permission from the Author. A private repository or distribution list is not Publicly Available merely because it has more than one member, provided access remains restricted to persons described in (b) or (c).
+
+
+Permitted Non-Commercial Use
+
+
+Subject to this license, you may:
+
+
+View, study, evaluate, and test the Software.
+Use the Software in personal, educational, portfolio, and other non-commercial Projects, including public display or demonstration of a non-monetized portfolio or educational Project.
+Modify the Software privately for permitted non-commercial use.
+Use the Software in a non-commercial game jam, including one that offers prizes. A prize awarded by an independent game-jam organizer based on participation, judging, or competition results does not by itself constitute Commercial Use. This exception does not include guaranteed payments, sponsorship payments, publishing advances, contract work, or other commercial funding.
+Submit contributions to the official VRS repository.
+Distribute compiled or packaged non-commercial Projects as permitted by the "Distribution of Non-Commercial Projects" section.
+
+
+You may privately share the Software with members of the same non-commercial Project team, provided that:
+
+
+Each team member accepts this license.
+Access is limited to persons actively working on the Project.
+The Software is not made Publicly Available.
+The Software is not used for paid work or on behalf of a commercial entity.
+
+
+Private repositories, build systems, continuous-integration systems, and backup systems may be used for a permitted non-commercial Project.
+
+All rights not expressly granted by this license are reserved by the Author.
+
+
+Distribution of Non-Commercial Projects
+
+
+You may distribute a compiled or packaged non-commercial Project that uses the Software, provided that:
+
+
+The Project does not generate revenue directly or indirectly.
+Access is not conditioned on payment, donation, subscription, sponsorship, or purchase.
+The Project does not contain advertisements, paid content, in-app purchases, or other monetization.
+The Project does not include or redistribute the source code of the Software.
+The Software is not exposed in a form intended to allow extraction and reuse as a standalone plugin, framework, library, SDK, or tool.
+Applicable copyright and attribution notices are preserved where reasonably practical.
+
+
+This permission does not allow distribution of:
+
+
+The Software itself.
+Modified versions of the Software.
+Standalone compiled versions of the Software.
+Source-code derivative works of the Software.
+Plugin collections, frameworks, templates, starter kits, SDKs, or packages containing the Software.
+Products whose primary purpose is to reproduce, replace, or redistribute VRS.
+
+
+Recipients of a permitted compiled Project may execute the Software only as incorporated into that Project. They may not extract, redistribute, modify, or use VRS separately from the Project.
+
+
+Projects Using VRS
+
+
+A Project that merely uses, links against, calls, subclasses, or integrates with the public APIs of VRS is not automatically considered a modified version or source-code derivative work of VRS.
+
+A modified version or source-code derivative work means a work that copies, modifies, adapts, or incorporates Protected Portions of the VRS source code.
+
+This license does not prohibit independently developed software merely because it has similar features, systems, APIs, or purposes, provided that it does not copy or derive from Protected Portions of the Software.
+
+
+Repository Forks
+
+
+A public fork of the official VRS repository may be used only for:
+
+
+Viewing, studying, evaluating, or testing the Software.
+Preparing and submitting contributions to the official repository.
+
+
+Modified VRS source code may be published in a public fork only to the extent reasonably necessary to prepare or submit a contribution.
+
+Personal modifications not intended for contribution must be kept locally or in a private, non-Publicly-Available repository.
+
+A fork may not be used to:
+
+
+Maintain or distribute an independent version of VRS.
+Publish releases or downloadable builds of VRS.
+Provide VRS or a modified version to third parties for separate use.
+Publish a competing or replacement product based on Protected Portions of VRS.
+Avoid obtaining a required commercial license.
+
+
+Every fork must preserve this license and all applicable legal notices.
+
+Rights granted directly by GitHub or another hosting platform for use of that platform remain subject to the applicable platform terms. Such platform rights do not grant permission to use or distribute the Software beyond this license.
+
+
+Commercial Use
+
+
+Commercial Use is not permitted without a valid commercial license obtained from the Author or through an authorized commercial distribution channel.
+
+Commercial Use includes, but is not limited to:
+
+
+Paid games, applications, products, or services.
+Advertising, subscriptions, paid downloadable content, or in-app purchases.
+Client work, freelance work, commissioned work, contract work, or work for hire.
+Use by or on behalf of a company, studio, partnership, or commercial organization.
+Internal company tools, production tools, employee training, prototypes, or business operations.
+Projects intended for future sale, monetization, commercial release, publishing, investment, or paid funding.
+Marketing, promotional, sales, or revenue-generating activities.
+
+
+A Project does not become non-commercial merely because it is free, unreleased, in development, not yet profitable, or not yet generating revenue.
+
+A commercial entity may privately evaluate the Software only to decide whether to obtain a commercial license. Evaluation does not permit production use, client work, public distribution, or commercial release.
+
+
+Commercial Licenses and Fab
+
+
+Commercial licenses may be obtained through:
+
+
+Fab.
+A direct written agreement with the Author.
+Another distribution channel expressly authorized by the Author.
+
+
+A copy obtained through Fab is governed by the license identified on the applicable Fab listing and the applicable Fab End User License Agreement ("Fab EULA"). Where a conflict exists between this license and the Fab EULA for a copy obtained through Fab, the Fab EULA controls solely for that copy, to the extent required by Epic Games' marketplace policies; this license continues to govern the Software as distributed through the official VRS repository and all other channels.
+
+This source-available license does not restrict rights validly granted for that copy through Fab.
+
+Unless a commercial license expressly states otherwise, it does not permit:
+
+
+Redistribution of VRS as a standalone product.
+Sale or distribution of the VRS source code.
+Independent sublicensing of VRS.
+Distribution of modified VRS source code.
+Removal of copyright, attribution, license, or trademark notices.
+Claiming ownership of VRS.
+
+
+
+General Restrictions
+
+
+Unless expressly permitted by this license or a separate commercial license, you may not:
+
+
+Use the Software for Commercial Use.
+Redistribute the Software or modified versions of it.
+Sell, rent, lease, sublicense, host, or commercially exploit the Software.
+Distribute VRS as part of a plugin collection, framework, SDK, template, starter kit, marketplace package, or source repository.
+Use Protected Portions of VRS to create or distribute a competing standalone framework, plugin, library, SDK, or product.
+Circumvent commercial licensing requirements through forks, binaries, remote access, hosted services, contractors, or other arrangements.
+Remove or alter copyright, license, attribution, authorship, or trademark notices.
+Suggest that your Project, fork, or product is officially endorsed, certified, or maintained by the Author without written permission.
+
+
+
+Contributions
+
+
+By intentionally submitting source code, documentation, tests, examples, or other materials for possible inclusion in VRS, you grant the Author a perpetual, worldwide, non-exclusive, royalty-free, transferable, sublicensable, and irrevocable license to:
+
+
+Use, reproduce, modify, and distribute the contribution.
+Incorporate it into VRS or related products.
+Commercially exploit it.
+Distribute it under this license, commercial licenses, the Fab license, or other licensing terms selected by the Author.
+
+
+You represent that:
+
+
+You have the legal right to submit the contribution.
+The contribution does not knowingly infringe third-party rights.
+The contribution does not contain confidential, unlawfully copied, or improperly licensed material.
+Any third-party material is clearly identified and compatible with the licensing of VRS.
+
+
+General feedback, bug reports, questions, and feature requests are not contributions unless clearly submitted for inclusion in the Software.
+
+Submitting a contribution does not grant you ownership of VRS or a right to payment, royalties, or compensation.
+
+
+Third-Party Components
+
+
+This license does not apply to third-party software, libraries, assets, or other materials identified as being subject to separate license terms.
+
+Such materials remain governed by their respective licenses.
+
+Nothing in this license grants rights that the Author does not possess.
+
+
+Trademarks and Ownership
+
+
+This license does not grant permission to use "VRS," "VRS Framework," the VRS logo, the Author's name, or related branding as the name or branding of another product or service.
+
+You may truthfully state that a Project uses or is compatible with VRS, provided that you do not suggest official affiliation or endorsement.
+
+The Software is licensed, not sold.
+
+The Author retains all right, title, and interest in the Software and its intellectual property.
+
+Modifying the Software does not grant ownership of the original Software or permission to distribute the modified version.
+
+
+Termination
+
+
+Any material violation of this license automatically terminates the rights granted to you.
+
+Upon termination, you must:
+
+
+Stop unauthorized use and distribution.
+Remove the Software from unauthorized Projects, products, repositories, and systems.
+Delete unauthorized copies in your possession or control.
+
+
+If a first violation was unintentional and non-commercial, your rights may be reinstated if you fully remedy the violation within 30 days after receiving written notice from the Author.
+
+Intentional redistribution, resale, removal of legal notices, misrepresentation, or unauthorized Commercial Use is not automatically eligible for reinstatement.
+
+
+No Warranty and Limitation of Liability
+
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE SOFTWARE IS PROVIDED "AS IS," WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT.
+
+THE AUTHOR DOES NOT WARRANT THAT THE SOFTWARE WILL BE ERROR-FREE, SECURE, COMPATIBLE WITH ANY PARTICULAR VERSION OF UNREAL ENGINE, CONTINUOUSLY AVAILABLE, MAINTAINED, OR SUPPORTED.
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE AUTHOR WILL NOT BE LIABLE FOR ANY CLAIM, DAMAGE, LOSS, COST, EXPENSE, LOST PROFIT, LOST DATA, BUSINESS INTERRUPTION, OR OTHER LIABILITY ARISING FROM OR RELATED TO THE SOFTWARE OR ITS USE.
+
+
+Governing Law and Disputes
+
+
+This license is governed by the laws of the State of Florida, United States of America, without regard to its conflict-of-laws principles, and without regard to the United Nations Convention on Contracts for the International Sale of Goods.
+
+The state and federal courts located in Florida have exclusive jurisdiction over any dispute arising out of or relating to this license, and each party consents to personal jurisdiction and venue there.
+
+Nothing in this section limits any mandatory consumer-protection or other rights a party may have under the law of their own jurisdiction that cannot be waived by contract.
+
+
+Severability and License Versions
+
+
+If any provision of this license is found unenforceable, the remaining provisions remain in effect.
+
+The Author may publish revised versions of this license.
+
+A copy of the Software remains governed by the license version distributed with that copy unless you voluntarily accept a later version or obtain a separate license.
+
+
+Commercial Licensing Contact
+
+
+Commercial licenses may be obtained through Fab or directly from the Author.
+
+Contact:
+
+iliazherlitsin@gmail.com
