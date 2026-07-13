@@ -21,12 +21,16 @@ applies them in a deterministic order (layer, then priority, then operation), ev
 change stays addressable through its key, and retained changes can be removed from future
 flushes with a single call.
 
+![VRS layered resolution](Resources/vrs-resolution.svg)
+
 ```
 MaxHealth = 100 (base)
   + 50   (armor,     layer 1)
   * 1.5  (blessing,  layer 2)
   - 30   (poison,    layer 2, higher priority)
 ```
+
+![VRS layered resolution](Resources/vrs-resolution.svg)
 
 ### Design note: in-place mutation, not reversible stat recomputation
 

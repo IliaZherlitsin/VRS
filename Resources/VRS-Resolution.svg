@@ -1,0 +1,100 @@
+<svg width="820" height="726" viewBox="0 0 820 726" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif">
+  <rect x="0.5" y="0.5" width="819" height="725" rx="14" fill="#15181B" stroke="#2A2F35"/>
+
+  <text x="40" y="50" font-size="23" font-weight="700" fill="#F2F3F5">VRS — how a value is resolved</text>
+  <text x="40" y="76" font-size="14" fill="#9AA0A6">Changes are queued, sorted by a three-level key, then flushed into the live value.</text>
+
+  <text x="40" y="112" font-size="12" font-weight="700" fill="#7C828A" letter-spacing="1.5">SORT ORDER — APPLIED FIRST TO LAST</text>
+
+  <rect x="40" y="124" width="240" height="70" rx="10" fill="#1E2327" stroke="#333A41"/>
+  <circle cx="66" cy="150" r="12" fill="#F2F3F5"/>
+  <text x="66" y="155" font-size="13" font-weight="700" fill="#15181B" text-anchor="middle">1</text>
+  <text x="88" y="150" font-size="15" font-weight="700" fill="#F2F3F5">Layer index</text>
+  <text x="88" y="172" font-size="12.5" fill="#AEB4BB">0 first, highest last</text>
+  <text x="88" y="188" font-size="11" fill="#7C828A">coarse ordering</text>
+
+  <rect x="300" y="124" width="240" height="70" rx="10" fill="#1E2327" stroke="#333A41"/>
+  <circle cx="326" cy="150" r="12" fill="#F2F3F5"/>
+  <text x="326" y="155" font-size="13" font-weight="700" fill="#15181B" text-anchor="middle">2</text>
+  <text x="348" y="150" font-size="15" font-weight="700" fill="#F2F3F5">Priority</text>
+  <text x="348" y="172" font-size="12.5" fill="#AEB4BB">0 first, higher last</text>
+  <text x="348" y="188" font-size="11" fill="#7C828A">within a layer</text>
+
+  <rect x="560" y="124" width="220" height="70" rx="10" fill="#1E2327" stroke="#333A41"/>
+  <circle cx="586" cy="150" r="12" fill="#F2F3F5"/>
+  <text x="586" y="155" font-size="13" font-weight="700" fill="#15181B" text-anchor="middle">3</text>
+  <text x="608" y="150" font-size="15" font-weight="700" fill="#F2F3F5">Operation</text>
+  <text x="608" y="172" font-size="12.5" fill="#AEB4BB">tiebreak only</text>
+  <text x="608" y="188" font-size="11" fill="#7C828A">when priority is equal</text>
+
+  <text x="40" y="234" font-size="12" font-weight="600" fill="#7C828A">operation tiebreak:</text>
+  <g font-size="13" font-weight="700">
+    <rect x="176" y="220" width="58" height="26" rx="13" fill="#2A2F35" stroke="#3C444C"/>
+    <text x="205" y="237" fill="#C6CBD1" text-anchor="middle">Set</text>
+    <path d="M240 233 h10" stroke="#8B9198" stroke-width="2"/>
+    <polygon points="252,233 246,230 246,236" fill="#8B9198"/>
+    <rect x="254" y="220" width="58" height="26" rx="13" fill="#173A22" stroke="#2E6B3E"/>
+    <text x="283" y="237" fill="#6FCF87" text-anchor="middle">Add</text>
+    <path d="M318 233 h10" stroke="#8B9198" stroke-width="2"/>
+    <polygon points="330,233 324,230 324,236" fill="#8B9198"/>
+    <rect x="332" y="220" width="58" height="26" rx="13" fill="#3A1A1A" stroke="#7A3030"/>
+    <text x="361" y="237" fill="#F08A8A" text-anchor="middle">Sub</text>
+    <path d="M396 233 h10" stroke="#8B9198" stroke-width="2"/>
+    <polygon points="408,233 402,230 402,236" fill="#8B9198"/>
+    <rect x="410" y="220" width="58" height="26" rx="13" fill="#152A44" stroke="#2A5488"/>
+    <text x="439" y="237" fill="#7FB4F0" text-anchor="middle">Mul</text>
+    <path d="M474 233 h10" stroke="#8B9198" stroke-width="2"/>
+    <polygon points="486,233 480,230 480,236" fill="#8B9198"/>
+    <rect x="488" y="220" width="58" height="26" rx="13" fill="#2C1A3A" stroke="#573072"/>
+    <text x="517" y="237" fill="#C89AE0" text-anchor="middle">Div</text>
+  </g>
+
+  <line x1="40" y1="266" x2="780" y2="266" stroke="#2A2F35" stroke-width="1"/>
+
+  <text x="40" y="298" font-size="12" font-weight="700" fill="#7C828A" letter-spacing="1.5">WORKED EXAMPLE</text>
+
+  <!-- base -->
+  <rect x="40" y="312" width="740" height="54" rx="10" fill="#1E2327" stroke="#333A41"/>
+  <text x="60" y="337" font-size="15" font-weight="700" fill="#F2F3F5">MaxHealth</text>
+  <text x="60" y="355" font-size="12.5" fill="#9AA0A6">base value</text>
+  <text x="700" y="347" font-size="15" fill="#7C828A" text-anchor="end">base</text>
+  <text x="760" y="349" font-size="24" font-weight="700" fill="#F2F3F5" text-anchor="end">100</text>
+
+  <path d="M410 366 v22" stroke="#8B9198" stroke-width="2.5"/>
+  <polygon points="410,396 404,385 416,385" fill="#8B9198"/>
+
+  <!-- layer 1 -->
+  <text x="40" y="388" font-size="11" font-weight="700" fill="#7C828A" letter-spacing="1">LAYER 1 · applied first</text>
+  <rect x="40" y="398" width="740" height="54" rx="10" fill="#1E2327" stroke="#2E6B3E"/>
+  <rect x="40" y="398" width="6" height="54" rx="3" fill="#3FBF63"/>
+  <text x="62" y="423" font-size="15" font-weight="700" fill="#6FCF87">Add  +50</text>
+  <text x="62" y="441" font-size="12.5" fill="#9AA0A6">armor</text>
+  <text x="760" y="435" font-size="24" font-weight="700" fill="#F2F3F5" text-anchor="end">150</text>
+
+  <path d="M410 452 v22" stroke="#8B9198" stroke-width="2.5"/>
+  <polygon points="410,482 404,471 416,471" fill="#8B9198"/>
+
+  <!-- layer 2 group -->
+  <text x="40" y="474" font-size="11" font-weight="700" fill="#7C828A" letter-spacing="1">LAYER 2 · applied last · sorted by priority</text>
+  <rect x="34" y="484" width="752" height="140" rx="12" fill="#191D21" stroke="#2A2F35"/>
+
+  <rect x="52" y="500" width="716" height="52" rx="9" fill="#1E2327" stroke="#2A5488"/>
+  <rect x="52" y="500" width="6" height="52" rx="3" fill="#4C90E8"/>
+  <text x="72" y="524" font-size="15" font-weight="700" fill="#7FB4F0">Mul  ×1.5</text>
+  <text x="72" y="542" font-size="12.5" fill="#9AA0A6">blessing · priority 0 · applied first</text>
+  <text x="760" y="533" font-size="20" font-weight="700" fill="#F2F3F5" text-anchor="end">225</text>
+
+  <rect x="52" y="558" width="716" height="52" rx="9" fill="#1E2327" stroke="#7A3030"/>
+  <rect x="52" y="558" width="6" height="52" rx="3" fill="#E85555"/>
+  <text x="72" y="582" font-size="15" font-weight="700" fill="#F08A8A">Sub  −30</text>
+  <text x="72" y="600" font-size="12.5" fill="#9AA0A6">poison · priority 1 · applied last</text>
+  <text x="760" y="591" font-size="20" font-weight="700" fill="#F2F3F5" text-anchor="end">195</text>
+
+  <path d="M410 624 v22" stroke="#8B9198" stroke-width="2.5"/>
+  <polygon points="410,654 404,643 416,643" fill="#8B9198"/>
+
+  <!-- result -->
+  <rect x="40" y="660" width="740" height="40" rx="9" fill="#F2F3F5"/>
+  <text x="60" y="685" font-size="15" font-weight="700" fill="#15181B">Flush → resolved MaxHealth</text>
+  <text x="760" y="686" font-size="22" font-weight="800" fill="#15181B" text-anchor="end">195</text>
+</svg>
