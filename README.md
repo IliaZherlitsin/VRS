@@ -1,4 +1,4 @@
-# VRS — Value Resolution System
+ # VRS — Value Resolution System
 
 A priority-based, layered value modification framework for Unreal Engine 5.
 
@@ -21,8 +21,6 @@ applies them in a deterministic order (layer, then priority, then operation), ev
 change stays addressable through its key, and retained changes can be removed from future
 flushes with a single call.
 
-![VRS layered resolution](Resources/vrs-resolution.svg)
-
 ```
 MaxHealth = 100 (base)
   + 50   (armor,     layer 1)
@@ -30,7 +28,7 @@ MaxHealth = 100 (base)
   - 30   (poison,    layer 2, higher priority)
 ```
 
-![VRS layered resolution](Resources/vrs-resolution.svg)
+![VRS layered resolution](Resources/VRS-Resolution.svg)
 
 ### Design note: in-place mutation, not reversible stat recomputation
 
