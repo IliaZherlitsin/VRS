@@ -1,3 +1,6 @@
+[!WARNING]
+Legacy / Community Version
+ 
  # VRS — Value Resolution System
 
 A priority-based, layered value modification framework for Unreal Engine 5.
